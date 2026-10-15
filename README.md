@@ -1,4 +1,4 @@
-# Uday Trivedi — Cybernetic AI/ML Portfolio
+# My Portfolio
 
 <p align="center">
   <img src="udayimage.jpeg" alt="Uday Trivedi" width="130" style="border-radius: 50%; border: 3px solid #38bdf8; box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);" />

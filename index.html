@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Uday Trivedi - 4th-year Integrated M.Tech student at VIT Chennai specializing in Machine Learning, Generative AI, NLP, and Agentic AI systems. 3x Hackathon Winner and AIML Lead at Nexus Club." />
+  <meta name="keywords"
+    content="Uday Trivedi, Machine Learning, Generative AI, AI Agents, Agentic AI, NLP, LLMs, RAG, Python, FastAPI, VIT Chennai, DataQuest Winner" />
+  <meta name="author" content="Uday Trivedi" />
+  <title>Uday Trivedi | AI/ML Student &amp; Builder | VIT Chennai</title>
+
+  <!-- Google Fonts for Modern Cybernetic Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- FontAwesome for High-Tech Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Persistent Deep-Space Cybernetic Canvas Overlay (Isolated Background) -->
+  <canvas id="neural-canvas"></canvas>
+  <div id="bg-overlay" aria-hidden="true"></div>
+
+  <!-- Persistent Top Ribbon Navigation Header -->
+  <header id="nav-container">
+    <div class="nav-brand" id="brand-logo" onclick="goToPanel(0)" title="Return to Home">
+      <div class="brand-monogram">UT</div>
+      <div class="brand-details">
+        <span class="brand-name">Uday Trivedi</span>
+        <span class="brand-role"><span class="status-dot"></span> AI/ML Student &amp; Builder</span>
+      </div>
+    </div>
+
+    <!-- 7 Navigation Links with Kinetic Underlines -->
+    <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+      <button class="nav-item active" data-index="0" id="nav-link-0">
+        <span class="nav-text">Home</span>
+        <span class="nav-underline"></span>
+      </button>
+      <button class="nav-item" data-index="1" id="nav-link-1">
+        <span class="nav-text">About</span>
+        <span class="nav-underline"></span>
+      </button>
+      <button class="nav-item" data-index="2" id="nav-link-2">
+        <span class="nav-text">Education</span>
+        <span class="nav-underline"></span>
+      </button>
+      <button class="nav-item" data-index="3" id="nav-link-3">
+        <span class="nav-text">Experience</span>
+        <span class="nav-underline"></span>
+      </button>
+      <button class="nav-item" data-index="4" id="nav-link-4">
+        <span class="nav-text">AI Projects</span>
+        <span class="nav-underline"></span>
+      </button>
+      <button class="nav-item" data-index="5" id="nav-link-5">
+        <span class="nav-text">Projects &amp; Skills</span>
+        <span class="nav-underline"></span>
+      </button>
+      <button class="nav-item" data-index="6" id="nav-link-6">
+        <span class="nav-text">Contact</span>
+        <span class="nav-underline"></span>
+      </button>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="nav-actions">
+      <a href="mailto:udaytrivedi0012@gmail.com" class="nav-cta-pill" title="Send Direct Email">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Get in Touch</span>
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Floating Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-monogram">UT</div>
+      <button class="mobile-close" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-links">
+      <button class="mobile-nav-link active" data-index="0">Home</button>
+      <button class="mobile-nav-link" data-index="1">About</button>
+      <button class="mobile-nav-link" data-index="2">Education</button>
+      <button class="mobile-nav-link" data-index="3">Experience</button>
+      <button class="mobile-nav-link" data-index="4">AI Projects</button>
+      <button class="mobile-nav-link" data-index="5">Projects &amp; Skills</button>
+      <button class="mobile-nav-link" data-index="6">Contact</button>
+    </div>
+  </div>
+
+  <!-- Master Horizontal Viewport Track Container (700vw width) -->
+  <main id="viewport-track">
+
+    <!-- ========================================================
+         PANEL 1: HOME (Index 0)
+         ======================================================== -->
+    <section class="page-panel" id="panel-home" data-panel="0">
+      <div class="panel-inner home-container">
+
+        <!-- Left Content Column (55% width) -->
+        <div class="home-content-col">
+          <div class="hero-status-tag">
+            <span class="tag-pulse"></span>
+            <span class="tag-text">Open to AI/ML &amp; Software Engineering Internships</span>
+          </div>
+
+          <p class="greeting-label">Hello, I'm</p>
+          <h1 class="hero-name gradient-header">Uday Trivedi</h1>
+          <h2 class="hero-subtitle">Machine Learning &bull; Generative AI &bull; Agentic Systems</h2>
+
+          <p class="hero-bio">
+            I'm a 4th-year Integrated M.Tech student at VIT Chennai focused on Machine Learning, Generative AI, NLP, and Agentic AI. I build practical AI systems that combine machine learning models, language models, retrieval, APIs, and solid software engineering to solve real-world problems.
+          </p>
+
+          <p class="hero-bio" style="margin-top: -0.8rem; font-size: 0.9rem; color: var(--text-muted);">
+            I enjoy taking an idea from a model or algorithm to a working application &mdash; whether that means training an ML model, building an LLM workflow, creating an AI agent, designing a retrieval system, or exposing the pipeline through a clean API.
+          </p>
+
+          <!-- Social Icon Inline Row -->
+          <div class="hero-social-row">
+            <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="GitHub Profile" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/uday-trivedi-2b62a7293" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:udaytrivedi0012@gmail.com" class="social-icon-btn" aria-label="Direct Email"
+              title="udaytrivedi0012@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Primary Actions Row -->
+          <div class="hero-cta-group">
+            <button class="btn-primary-glow" id="btn-explore" onclick="goToPanel(4)">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="#contact" class="btn-secondary-glass" onclick="goToPanel(6); return false;">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <!-- Bottom Left Secondary Action -->
+          <div class="hero-resume-dock">
+            <button class="btn-resume-dock" onclick="openResumeModal()">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>View Resume</span>
+              <span class="dock-badge">PDF</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Media Column (45% width) -->
+        <div class="home-media-col">
+          <div class="profile-orb-wrapper">
+            <div class="orb-halo-outer"></div>
+            <div class="orb-halo-inner"></div>
+            <div class="profile-frame">
+              <img src="./udayimage.jpeg" onerror="this.onerror=null; this.src='./udayimage.jpeg';"
+                alt="Uday Trivedi - AI/ML Student &amp; Builder" class="profile-img" />
+            </div>
+            <!-- Floating Holographic Metric Badges -->
+            <div class="floating-badge badge-top-right">
+              <i class="fa-solid fa-brain"></i>
+              <div>
+                <div class="fb-val">Generative AI</div>
+                <div class="fb-label">Agents &bull; RAG &bull; NLP</div>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-trophy"></i>
+              <div>
+                <div class="fb-val">3&times; Winner</div>
+                <div class="fb-label">Hackathons &bull; VIT Chennai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Centered Bottom Navigation Prompt Indicator -->
+      <div class="scroll-prompt-indicator" onclick="goToPanel(1)" title="Proceed to About Me">
+        <span class="prompt-text">Scroll Down &bull; Swipe Right</span>
+        <div class="prompt-mouse">
+          <div class="prompt-wheel"></div>
+        </div>
+        <i class="fa-solid fa-chevron-down prompt-arrow"></i>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PANEL 2: ABOUT ME (Index 1)
+         ======================================================== -->
+    <section class="page-panel" id="panel-about" data-panel="1">
+      <div class="panel-inner about-container">
+
+        <!-- Header Banner -->
+        <div class="section-title-wrap">
+          <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
+          <h2 class="section-title gradient-header">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- 60% / 40% Column-Split Layout -->
+        <div class="about-grid">
+
+          <!-- Left Column: Narrative Streams (60%) -->
+          <div class="about-narrative-col">
+            <div class="data-card narrative-card">
+              <div class="card-glow-layer"></div>
+              <h3 class="narrative-subtitle">
+                <i class="fa-solid fa-terminal"></i> Student, Builder &amp; Applied AI Practitioner
+              </h3>
+              <p class="narrative-p">
+                I'm a 4th-year Integrated M.Tech student at VIT Chennai with a strong interest in Artificial Intelligence and software development. My main focus is on building intelligent applications using Machine Learning, Generative AI, NLP, LLMs, and agentic workflows. I enjoy working at the point where AI models meet actual software &mdash; turning predictions, embeddings, and language models into applications that people can use.
+              </p>
+              <p class="narrative-p">
+                Over the past few years, I have worked on projects spanning machine learning, computer vision, NLP, agricultural intelligence, fraud/risk analysis, document systems, and AI agents. Hackathons and student organizations have given me opportunities to work in teams, take ownership of technical components, and build under real constraints.
+              </p>
+              <p class="narrative-p">
+                I learn best by building. Instead of treating ML and AI as isolated algorithms, I try to understand how the model fits into a complete system &mdash; from data preparation and inference pipelines to REST APIs, stateful agent workflows, and clean user interaction.
+              </p>
+              <p class="narrative-p">
+                I'm currently interested in opportunities where I can work on Machine Learning, AI/ML engineering, Generative AI, NLP, LLM applications, or intelligent backend systems while continuing to strengthen my fundamentals in algorithms and software engineering.
+              </p>
+
+              <!-- Quick Highlights Bar -->
+              <div class="about-stats-row">
+                <div class="stat-item">
+                  <div class="stat-number">4th</div>
+                  <div class="stat-label">Year Integrated M.Tech</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <div class="stat-number">8.5</div>
+                  <div class="stat-label">Current CGPA</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <div class="stat-number">3&times;</div>
+                  <div class="stat-label">Hackathon Winner</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <div class="stat-number">Lead</div>
+                  <div class="stat-label">Nexus Club AIML</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Currently Strip (40%) -->
+          <div class="about-focus-col">
+            <div class="data-card focus-card">
+              <div class="card-glow-layer"></div>
+              <div class="card-header-line">
+                <i class="fa-solid fa-compass card-icon"></i>
+                <h3 class="card-heading">Currently Focused On</h3>
+              </div>
+              <p class="focus-intro-text">What I'm building and deepening right now:</p>
+
+              <ul class="focus-list">
+                <li class="focus-item">
+                  <div class="focus-bullet-icon"><i class="fa-solid fa-robot"></i></div>
+                  <div class="focus-content">
+                    <strong class="focus-title">Agentic AI &amp; LLM Workflows</strong>
+                    <span class="focus-desc">Building autonomous agents using LangChain, LangGraph, tool calling, and structured output parsing.</span>
+                  </div>
+                </li>
+
+                <li class="focus-item">
+                  <div class="focus-bullet-icon"><i class="fa-solid fa-database"></i></div>
+                  <div class="focus-content">
+                    <strong class="focus-title">RAG &amp; Vector Databases</strong>
+                    <span class="focus-desc">Designing retrieval-augmented generation pipelines using ChromaDB, dense embeddings, and FastAPI.</span>
+                  </div>
+                </li>
+
+                <li class="focus-item">
+                  <div class="focus-bullet-icon"><i class="fa-solid fa-code"></i></div>
+                  <div class="focus-content">
+                    <strong class="focus-title">Data Structures &amp; Backend Systems</strong>
+                    <span class="focus-desc">Practicing core algorithms and designing modular, reliable REST APIs in Python.</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="focus-footer">
+                <button class="btn-sm-glass" onclick="goToPanel(4)">
+                  <span>View Flagship Projects</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PANEL 3: EDUCATION (Index 2)
+         ======================================================== -->
+    <section class="page-panel" id="panel-education" data-panel="2">
+      <div class="panel-inner education-container">
+
+        <div class="section-title-wrap">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Foundations</span>
+          <h2 class="section-title gradient-header">Education</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="education-grid">
+
+          <!-- Degree Card -->
+          <div class="data-card edu-card main-degree-card">
+            <div class="card-glow-layer"></div>
+            <div class="edu-card-top">
+              <div class="edu-badge-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="edu-timing">
+                <span class="badge-timeline">2023 &mdash; 2028</span>
+                <span class="badge-status">CGPA: 8.5 / 10</span>
+              </div>
+            </div>
+
+            <h3 class="edu-degree">Integrated M.Tech &mdash; Software Engineering</h3>
+            <h4 class="edu-institution"><i class="fa-solid fa-university"></i> Vellore Institute of Technology &mdash; Chennai</h4>
+
+            <p class="edu-summary">
+              5-year integrated graduate curriculum combining rigorous computer science and software engineering foundations with specialized advanced coursework in machine learning, natural language processing, and distributed systems.
+            </p>
+
+            <div class="edu-section-block">
+              <span class="edu-subhead">Key Coursework Modules:</span>
+              <div class="tech-badge-wrap">
+                <span class="tech-badge">Machine Learning</span>
+                <span class="tech-badge">Natural Language Processing</span>
+                <span class="tech-badge">Deep Learning</span>
+                <span class="tech-badge">Data Structures &amp; Algorithms</span>
+                <span class="tech-badge">Software Design Patterns</span>
+                <span class="tech-badge">Cloud Computing</span>
+                <span class="tech-badge">Database Management</span>
+                <span class="tech-badge">Linear Algebra &amp; Statistics</span>
+              </div>
+            </div>
+
+            <div class="edu-highlights">
+              <div class="hl-item"><i class="fa-solid fa-check"></i> AIML Lead, Nexus Club (VIT Chennai)</div>
+              <div class="hl-item"><i class="fa-solid fa-check"></i> AI/ML Intern, InLighnX Technologies (July &mdash; Sept 2025)</div>
+              <div class="hl-item"><i class="fa-solid fa-check"></i> Member, Microsoft Innovation Club VITC</div>
+              <div class="hl-item"><i class="fa-solid fa-check"></i> Member, Newton School Coding Club VITC</div>
+              <div class="hl-item"><i class="fa-solid fa-check"></i> Member, National Service Scheme (NSS) VIT Chennai</div>
+            </div>
+          </div>
+
+          <!-- Recognition and Hackathons -->
+          <div class="data-card edu-card certs-card">
+            <div class="card-glow-layer"></div>
+            <div class="edu-card-top">
+              <div class="edu-badge-icon cert-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="edu-timing">
+                <span class="badge-timeline">Verified Records</span>
+              </div>
+            </div>
+
+            <h3 class="edu-degree">Achievements &amp; Recognition</h3>
+            <h4 class="edu-institution"><i class="fa-solid fa-shield-halved"></i> Hackathons, Selection &amp; Practical Experience</h4>
+
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-logo-box"><i class="fa-solid fa-trophy"></i></div>
+                <div class="cert-details">
+                  <div class="cert-title">1st Place &mdash; DataQuest 2.0 (80+ teams)</div>
+                  <div class="cert-meta">VIT Chennai &bull; Team Amigos &bull; Project: GrowMate (AI agriculture platform)</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-logo-box"><i class="fa-solid fa-star"></i></div>
+                <div class="cert-details">
+                  <div class="cert-title">Top 20 Software Teams &mdash; Smart India Hackathon 2025</div>
+                  <div class="cert-meta">VIT Chennai internal selection &bull; Problem Statement ID 25044 &bull; AgriMitra</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-logo-box"><i class="fa-solid fa-trophy"></i></div>
+                <div class="cert-details">
+                  <div class="cert-title">1st Place &mdash; CodeZilla 2025 (90+ teams)</div>
+                  <div class="cert-meta">VIT Chennai, ECDS &bull; 450+ participants &bull; Project: SecureSwipe</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-logo-box"><i class="fa-solid fa-seedling"></i></div>
+                <div class="cert-details">
+                  <div class="cert-title">vNest Incubator Support &mdash; VIT Chennai</div>
+                  <div class="cert-meta">AgriMitra platform selected for campus incubation support and mentoring</div>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-logo-box"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="cert-details">
+                  <div class="cert-title">InLighnX Technologies &mdash; AI/ML Internship</div>
+                  <div class="cert-meta">July 2025 &mdash; September 2025 &bull; Practical ML development and data evaluation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PANEL 4: EXPERIENCE (Index 3)
+         ======================================================== -->
+    <section class="page-panel" id="panel-experience" data-panel="3">
+      <div class="panel-inner experience-container">
+
+        <div class="section-title-wrap">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience &amp; Leadership</span>
+          <h2 class="section-title gradient-header">Experience and Leadership</h2>
+          <p class="section-subtitle">Internship, technical leadership, and collaborative team roles at VIT Chennai</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline-stack">
+
+          <!-- Experience Card 1: AI/ML Intern InLighnX -->
+          <div class="data-card exp-card">
+            <div class="card-glow-layer"></div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-wrap">
+                <div class="exp-role-title">AI/ML Intern</div>
+                <div class="exp-company-sub">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span>InLighnX Technologies</span>
+                  <span class="exp-dot">&bull;</span>
+                  <span class="exp-period">July 2025 &mdash; September 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="exp-intro-paragraph">
+              Worked on applied AI/ML tasks involving data processing, model development, and experimentation, gaining practical experience in taking machine learning concepts from notebooks toward usable solutions.
+            </p>
+
+            <div class="exp-achievements-block">
+              <div class="achievements-heading">Key Contributions:</div>
+              <ul class="achievements-list">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Preprocessed and cleaned multi-source tabular and unstructured datasets, implementing feature engineering and data validation routines.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Trained and evaluated baseline machine learning models using scikit-learn, tuning hyperparameters and measuring performance across validation metrics.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Assisted in structuring modular Python code for data ingestion and inference to support downstream application integration.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">scikit-learn</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">Model Evaluation</span>
+              <span class="tech-badge">Feature Engineering</span>
+            </div>
+          </div>
+
+          <!-- Experience Card 2: AIML Lead NEXUS VIT -->
+          <div class="data-card exp-card">
+            <div class="card-glow-layer"></div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-wrap">
+                <div class="exp-role-title">AIML Lead, Nexus Club</div>
+                <div class="exp-company-sub">
+                  <i class="fa-solid fa-brain"></i>
+                  <span>Nexus Club, VIT Chennai</span>
+                  <span class="exp-dot">&bull;</span>
+                  <span class="exp-period">April 2025 &mdash; Present</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="exp-intro-paragraph">
+              Leading AI/ML-focused technical initiatives within Nexus VIT while working with students on machine learning, AI applications, and practical project development. Previously contributed as an active technical member from September 2024 to March 2025 before taking on the lead role.
+            </p>
+
+            <div class="exp-achievements-block">
+              <div class="achievements-heading">Key Responsibilities:</div>
+              <ul class="achievements-list">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Coordinate technical discussions, code walkthroughs, and experimentation sessions around machine learning, NLP, and Generative AI workflows.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Guide student teams in structuring hackathon projects, from problem definition and dataset curation to baseline model evaluation.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Foster peer learning by organizing collaborative build workshops and technical review sessions for club members.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-row">
+              <span class="tech-badge">Machine Learning</span>
+              <span class="tech-badge">Generative AI</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Technical Leadership</span>
+              <span class="tech-badge">Peer Mentoring</span>
+            </div>
+          </div>
+
+          <!-- Experience Card 3: Dreadnought Robotics -->
+          <div class="data-card exp-card">
+            <div class="card-glow-layer"></div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-wrap">
+                <div class="exp-role-title">Management Team Member</div>
+                <div class="exp-company-sub">
+                  <i class="fa-solid fa-robot"></i>
+                  <span>Dreadnought Robotics, VIT Chennai</span>
+                  <span class="exp-dot">&bull;</span>
+                  <span class="exp-period">August 2025 &mdash; Present</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="exp-intro-paragraph">
+              Contribute to the management and coordination of activities within Dreadnought Robotics while working alongside a multidisciplinary student team.
+            </p>
+
+            <div class="exp-achievements-block">
+              <div class="achievements-heading">Responsibilities:</div>
+              <ul class="achievements-list">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Support event operations, schedule planning, and team communication across robotics initiatives.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Assist in documentation and resource management for multidisciplinary project milestones.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-row">
+              <span class="tech-badge">Team Coordination</span>
+              <span class="tech-badge">Operations Management</span>
+              <span class="tech-badge">Documentation</span>
+            </div>
+          </div>
+
+          <!-- Experience Card 4: Nexathon 2024 -->
+          <div class="data-card exp-card">
+            <div class="card-glow-layer"></div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-wrap">
+                <div class="exp-role-title">Organizing Committee, Nexathon</div>
+                <div class="exp-company-sub">
+                  <i class="fa-solid fa-calendar-check"></i>
+                  <span>Nexus Club, VIT Chennai</span>
+                  <span class="exp-dot">&bull;</span>
+                  <span class="exp-period">2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="exp-intro-paragraph">
+              Contributed to organizing Nexathon, a hackathon hosting 120+ student teams from multiple institutions, including an entrepreneurship bootcamp with the Wadhwani Foundation.
+            </p>
+
+            <div class="exp-achievements-block">
+              <div class="achievements-heading">Contributions:</div>
+              <ul class="achievements-list">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Assisted team registration, submission tracking, and query resolution during multi-round project evaluations.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Facilitated coordination between student participants, mentor panels, and event operational teams.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-row">
+              <span class="tech-badge">Event Coordination</span>
+              <span class="tech-badge">Operations</span>
+              <span class="tech-badge">Community Support</span>
+            </div>
+          </div>
+
+          <!-- Experience Card 5: Technical Clubs & Community -->
+          <div class="data-card exp-card">
+            <div class="card-glow-layer"></div>
+
+            <div class="exp-card-header">
+              <div class="exp-role-wrap">
+                <div class="exp-role-title">Technical Clubs &amp; Community Member</div>
+                <div class="exp-company-sub">
+                  <i class="fa-solid fa-users"></i>
+                  <span>Microsoft Innovation Club VITC &bull; Newton School Coding Club VITC &bull; NSS VIT Chennai</span>
+                  <span class="exp-dot">&bull;</span>
+                  <span class="exp-period">Sep 2024 &mdash; Present</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="exp-intro-paragraph">
+              Active participant in technical and social initiatives across the VIT Chennai student community.
+            </p>
+
+            <div class="exp-achievements-block">
+              <div class="achievements-heading">Involvement:</div>
+              <ul class="achievements-list">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Participate in coding challenges, algorithmic discussions, and technology sessions with Microsoft Innovation Club and Newton School Coding Club.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Contribute to student-led community outreach and social welfare initiatives through NSS VIT Chennai.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-skills-row">
+              <span class="tech-badge">Competitive Programming</span>
+              <span class="tech-badge">DSA</span>
+              <span class="tech-badge">Community Service</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PANEL 5: AI PROJECTS (Index 4)
+         ======================================================== -->
+    <section class="page-panel" id="panel-ai-projects" data-panel="4">
+      <div class="panel-inner projects-container">
+
+        <div class="section-title-wrap">
+          <span class="section-tag"><i class="fa-solid fa-brain"></i> Flagship Work</span>
+          <h2 class="section-title gradient-header">Flagship AI Projects</h2>
+          <p class="section-subtitle">Real problems. Methodical approaches. Verifiable results.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: AgriMitra -->
+          <div class="data-card project-card featured-project">
+            <div class="card-glow-layer"></div>
+            <div class="featured-ribbon">
+              <i class="fa-solid fa-star"></i> Top 20 College Selection &bull; SIH 2025 &bull; Problem Statement 25044
+            </div>
+
+            <div class="project-content-body">
+              <div class="project-top-row">
+                <span class="project-category">AI/ML &bull; Agentic AI &bull; Computer Vision &bull; Remote Sensing</span>
+                <span class="project-version">Team Project</span>
+              </div>
+
+              <h3 class="project-title">AgriMitra: Agricultural Decision-Support Platform</h3>
+
+              <p class="project-desc">
+                An AI-powered agricultural decision-support platform designed to help Indian farmers make data-driven decisions using machine learning, computer vision, satellite intelligence, and agentic workflows.
+              </p>
+
+              <ul class="project-desc" style="margin:0.5rem 0 0.5rem 1.2rem; padding-left: 0.5rem;">
+                <li><strong>Problem:</strong> Smallholder farmers lack unified, localized guidance on crop selection, yield forecasts, and pest risks, often relying on guesswork or unverified inputs.</li>
+                <li><strong>Yield &amp; Crop Recommendation:</strong> Implemented Random Forest regression models to predict crop yield from soil parameters (NPK, moisture, pH) combined with historical weather data, alongside environmental crop recommendation pipelines.</li>
+                <li><strong>Agentic AI Advisory:</strong> Designed an AI-driven workflow that synthesizes soil chemistry and weather forecasts to generate personalized fertilizer, irrigation, and soil management recommendations.</li>
+                <li><strong>Vision &amp; Remote Sensing:</strong> Deep-learning computer vision models with agricultural image datasets to identify crop diseases and pests, paired with Google Earth Engine vegetation indices (NDVI/NDRE) for field health monitoring.</li>
+                <li><strong>Accessibility &amp; Governance:</strong> Built with multilingual and voice-oriented interaction for users with limited digital literacy, plus an administrative dashboard for monitoring regional crop conditions.</li>
+                <li><strong>Verifiable Result:</strong> Selected among Top 20 college-level software teams at VIT Chennai for Smart India Hackathon 2025 (Problem Statement ID 25044) and received campus incubation support through vNest.</li>
+              </ul>
+
+              <div class="tech-badge-wrap">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Random Forest</span>
+                <span class="tech-badge">scikit-learn</span>
+                <span class="tech-badge">PyTorch</span>
+                <span class="tech-badge">Computer Vision</span>
+                <span class="tech-badge">Google Earth Engine</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">Agentic AI</span>
+              </div>
+
+              <div class="project-actions-row">
+                <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer"
+                  class="btn-proj-code">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: GrowMate -->
+          <div class="data-card project-card featured-project">
+            <div class="card-glow-layer"></div>
+            <div class="featured-ribbon" style="background: linear-gradient(90deg, rgba(46, 204, 113, 0.15) 0%, rgba(8, 20, 52, 0.2) 100%); border-bottom-color: rgba(46, 204, 113, 0.25); color: #4ade80;">
+              <i class="fa-solid fa-trophy"></i> 1st Place &bull; DataQuest 2.0 &bull; 80+ Teams
+            </div>
+
+            <div class="project-content-body">
+              <div class="project-top-row">
+                <span class="project-category">Machine Learning &bull; Agriculture &bull; Data Science</span>
+                <span class="project-version">Team Amigos</span>
+              </div>
+
+              <h3 class="project-title">GrowMate: Intelligent Agriculture &amp; Market Platform</h3>
+
+              <p class="project-desc">
+                An AI-powered agriculture platform developed for DataQuest 2.0 to help farmers make better decisions around crop selection, fertilizer usage, and market conditions.
+              </p>
+
+              <ul class="project-desc" style="margin:0.5rem 0 0.5rem 1.2rem; padding-left: 0.5rem;">
+                <li><strong>Problem:</strong> Farmers face yield uncertainty and market price volatility due to disconnected advisory resources and lack of timely regional pricing signals.</li>
+                <li><strong>Crop &amp; Fertilizer Models:</strong> Developed machine learning models to recommend suitable crops based on soil and environmental features, alongside nutrient-balancing algorithms for fertilizer application.</li>
+                <li><strong>Live Market Analysis:</strong> Built an analytics dashboard monitoring market trends and price movements to assist farmers in timing produce sales effectively.</li>
+                <li><strong>Community Collaboration:</strong> Implemented a collaborative community forum allowing farmers to exchange localized insights, pest observations, and agronomic techniques.</li>
+                <li><strong>Verifiable Result:</strong> Won 1st Place at DataQuest 2.0 among 80+ competing teams at VIT Chennai (Team Amigos).</li>
+              </ul>
+
+              <div class="tech-badge-wrap">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">scikit-learn</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">Data Science</span>
+                <span class="tech-badge">REST APIs</span>
+              </div>
+
+              <div class="project-actions-row">
+                <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer"
+                  class="btn-proj-code">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: SecureSwipe -->
+          <div class="data-card project-card featured-project">
+            <div class="card-glow-layer"></div>
+            <div class="featured-ribbon cv-ribbon">
+              <i class="fa-solid fa-trophy"></i> 1st Place &bull; CodeZilla 2025 &bull; 90+ Teams
+            </div>
+
+            <div class="project-content-body">
+              <div class="project-top-row">
+                <span class="project-category">Machine Learning &bull; Fraud Detection &bull; FinTech</span>
+                <span class="project-version">Team Project</span>
+              </div>
+
+              <h3 class="project-title">SecureSwipe: Financial Transaction Fraud Classification</h3>
+
+              <p class="project-desc">
+                A machine-learning-based fraud detection project designed to identify suspicious financial transactions and assist risk analysis across digital payment channels.
+              </p>
+
+              <ul class="project-desc" style="margin:0.5rem 0 0.5rem 1.2rem; padding-left: 0.5rem;">
+                <li><strong>Problem:</strong> Financial systems require rapid anomaly detection to catch fraudulent payment attempts without generating high false-positive friction for genuine users.</li>
+                <li><strong>Model Training &amp; SMOTE:</strong> Trained supervised classification models on transaction feature vectors, applying SMOTE to address heavy class imbalance between legitimate and fraudulent transactions.</li>
+                <li><strong>Risk Scoring Pipeline:</strong> Structured an anomaly screening pipeline evaluating behavioral, location, and merchant discrepancies to assign risk scores for transaction verification.</li>
+                <li><strong>Dual Dashboards:</strong> Built interactive interfaces comparing current fraud hotspot distributions against projected model-assisted risk mitigation scenarios across digital payment flows.</li>
+                <li><strong>Verifiable Result:</strong> Won 1st Place at CodeZilla 2025 out of 90+ participating teams (450+ total participants).</li>
+              </ul>
+
+              <div class="tech-badge-wrap">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">scikit-learn</span>
+                <span class="tech-badge">SMOTE</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">FinTech ML</span>
+                <span class="tech-badge">Data Analysis</span>
+              </div>
+
+              <div class="project-actions-row">
+                <a href="https://github.com/Uday-Trivedi/SecureSwipe" target="_blank" rel="noopener noreferrer"
+                  class="btn-proj-code">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SoberCare / PhaseSense NLP -->
+          <div class="data-card project-card">
+            <div class="card-glow-layer"></div>
+            <div class="featured-ribbon" style="background: linear-gradient(90deg, rgba(168, 85, 247, 0.15) 0%, rgba(8, 20, 52, 0.2) 100%); border-bottom-color: rgba(168, 85, 247, 0.25); color: #c084fc;">
+              <i class="fa-solid fa-shield-heart"></i> NLP Decision Support &bull; Active Development
+            </div>
+
+            <div class="project-content-body">
+              <div class="project-top-row">
+                <span class="project-category">Natural Language Processing &bull; Semantic Search &bull; Decision Support</span>
+                <span class="project-version">Decision Support System</span>
+              </div>
+
+              <h3 class="project-title">SoberCare &amp; PhaseSense: Recovery Stage Classification</h3>
+
+              <p class="project-desc">
+                An agentic AI-based recovery companion designed to analyze user-provided text and identify conversational patterns associated with different stages of recovery.
+              </p>
+
+              <ul class="project-desc" style="margin:0.5rem 0 0.5rem 1.2rem; padding-left: 0.5rem;">
+                <li><strong>Problem:</strong> Individuals navigating recovery experience evolving psychological states that generic automated responses fail to interpret with adequate contextual nuance.</li>
+                <li><strong>Semantic NLP Pipeline:</strong> Built PhaseSense NLP using BAAI/bge-small-en dense sentence embeddings, keyword signals, and ChromaDB vector similarity scoring.</li>
+                <li><strong>Phase Classification:</strong> Maps user reflection inputs into 5 behavioral recovery stages (Denial/Minimization, Cognitive Negotiation, Active Craving, Heightened Vulnerability, Recovery/Stabilization) to inform supportive LLM response generation.</li>
+                <li><strong>Empirical Decision Support Boundary:</strong> Engineered strictly as an empathetic decision-support companion and reflection aid &mdash; deliberately avoiding clinical diagnosis or medical treatment claims.</li>
+              </ul>
+
+              <div class="tech-badge-wrap">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">ChromaDB</span>
+                <span class="tech-badge">BAAI/bge-small-en</span>
+                <span class="tech-badge">LangChain</span>
+                <span class="tech-badge">NLP</span>
+                <span class="tech-badge">scikit-learn</span>
+              </div>
+
+              <div class="project-actions-row">
+                <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer"
+                  class="btn-proj-code">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PANEL 6: PROJECTS & TECH STACK (Index 5)
+         ======================================================== -->
+    <section class="page-panel" id="panel-projects" data-panel="5">
+      <div class="panel-inner tech-projects-container">
+
+        <div class="section-title-wrap">
+          <span class="section-tag"><i class="fa-solid fa-cubes"></i> Repositories &amp; Skills</span>
+          <h2 class="section-title gradient-header">Projects and Tech Stack</h2>
+          <p class="section-subtitle">Grouped technical proficiencies and open-source software repositories</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Categorized Skills Matrix Grid -->
+        <div class="skills-matrix-wrap">
+          <div class="data-card skills-card">
+            <div class="card-glow-layer"></div>
+
+            <div class="skills-card-header">
+              <div class="skills-tag">&lt;/&gt; Technical Capabilities</div>
+              <h3 class="skills-title">Skill Matrix</h3>
+              <p class="skills-sub">Technologies, frameworks, and methods applied in projects</p>
+            </div>
+
+            <div class="skills-sectors-grid">
+
+              <div class="skill-sector">
+                <div class="sector-head"><i class="fa-solid fa-code"></i> LANGUAGES</div>
+                <div class="capsule-row">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">C++</span>
+                  <span class="tech-badge">Java</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">SQL</span>
+                </div>
+              </div>
+
+              <div class="skill-sector">
+                <div class="sector-head"><i class="fa-solid fa-brain"></i> MACHINE LEARNING &amp; DEEP LEARNING</div>
+                <div class="capsule-row">
+                  <span class="tech-badge">scikit-learn</span>
+                  <span class="tech-badge">PyTorch</span>
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">Pandas</span>
+                  <span class="tech-badge">NumPy</span>
+                  <span class="tech-badge">Feature Engineering</span>
+                  <span class="tech-badge">Model Evaluation</span>
+                  <span class="tech-badge">CNN</span>
+                  <span class="tech-badge">LSTM</span>
+                  <span class="tech-badge">Random Forest</span>
+                </div>
+              </div>
+
+              <div class="skill-sector">
+                <div class="sector-head"><i class="fa-solid fa-robot"></i> GENERATIVE AI &amp; AGENTIC SYSTEMS</div>
+                <div class="capsule-row">
+                  <span class="tech-badge">Generative AI</span>
+                  <span class="tech-badge">LLM Applications</span>
+                  <span class="tech-badge">AI Agents</span>
+                  <span class="tech-badge">Agentic AI</span>
+                  <span class="tech-badge">LangChain</span>
+                  <span class="tech-badge">LangGraph</span>
+                  <span class="tech-badge">Prompt Engineering</span>
+                  <span class="tech-badge">Gemini API</span>
+                  <span class="tech-badge">RAG</span>
+                </div>
+              </div>
+
+              <div class="skill-sector">
+                <div class="sector-head"><i class="fa-solid fa-comments"></i> NATURAL LANGUAGE PROCESSING (NLP)</div>
+                <div class="capsule-row">
+                  <span class="tech-badge">Natural Language Processing</span>
+                  <span class="tech-badge">Transformers</span>
+                  <span class="tech-badge">Dense Embeddings</span>
+                  <span class="tech-badge">Semantic Search</span>
+                  <span class="tech-badge">Vector Databases</span>
+                  <span class="tech-badge">ChromaDB</span>
+                  <span class="tech-badge">spaCy</span>
+                </div>
+              </div>
+
+              <div class="skill-sector">
+                <div class="sector-head"><i class="fa-solid fa-server"></i> BACKEND &amp; INTERFACES</div>
+                <div class="capsule-row">
+                  <span class="tech-badge">FastAPI</span>
+                  <span class="tech-badge">REST APIs</span>
+                  <span class="tech-badge">API Integration</span>
+                  <span class="tech-badge">Supabase</span>
+                  <span class="tech-badge">Streamlit</span>
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">Node.js</span>
+                </div>
+              </div>
+
+              <div class="skill-sector">
+                <div class="sector-head"><i class="fa-solid fa-wrench"></i> TOOLS &amp; ALGORITHMS</div>
+                <div class="capsule-row">
+                  <span class="tech-badge">Git</span>
+                  <span class="tech-badge">GitHub</span>
+                  <span class="tech-badge">VS Code</span>
+                  <span class="tech-badge">Jupyter Notebook</span>
+                  <span class="tech-badge">Google Colab</span>
+                  <span class="tech-badge">Data Structures &amp; Algorithms</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Repositories Grid -->
+        <div class="general-projects-grid">
+
+          <!-- AgentM -->
+          <div class="data-card gen-proj-card">
+            <div class="card-glow-layer"></div>
+            <div class="gen-proj-top">
+              <span class="gp-tag">Generative AI / AI Agents</span>
+              <span class="gp-status">Active</span>
+            </div>
+            <h4 class="gp-title">AgentM</h4>
+            <p class="gp-desc">Agentic AI workflow combining ResumeParserAgent for structured entity extraction and JobDiscoveryAgent for query formulation and opportunity matching.</p>
+            <div class="capsule-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">FastAPI</span>
+              <span class="tech-badge">LangChain</span>
+              <span class="tech-badge">AI Agents</span>
+              <span class="tech-badge">Supabase</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer"
+                class="btn-proj-code"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <!-- SocialFlow -->
+          <div class="data-card gen-proj-card">
+            <div class="card-glow-layer"></div>
+            <div class="gen-proj-top">
+              <span class="gp-tag">Generative AI / RAG</span>
+              <span class="gp-status">Active</span>
+            </div>
+            <h4 class="gp-title">SocialFlow</h4>
+            <p class="gp-desc">AI workflow combining retrieval-augmented generation (RAG) with intent detection, ChromaDB vector retrieval, and Gemini LLM orchestration.</p>
+            <div class="capsule-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">ChromaDB</span>
+              <span class="tech-badge">LangChain</span>
+              <span class="tech-badge">Gemini</span>
+              <span class="tech-badge">RAG</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer"
+                class="btn-proj-code"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <!-- E-Locker -->
+          <div class="data-card gen-proj-card">
+            <div class="card-glow-layer"></div>
+            <div class="gen-proj-top">
+              <span class="gp-tag">Cybersecurity / Python</span>
+              <span class="gp-status">Completed</span>
+            </div>
+            <h4 class="gp-title">E-Locker</h4>
+            <p class="gp-desc">Local secure document storage application combining Fernet symmetric encryption for file data and asymmetric RSA key management, built with Streamlit.</p>
+            <div class="capsule-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">Cryptography</span>
+              <span class="tech-badge">Fernet</span>
+              <span class="tech-badge">RSA</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer"
+                class="btn-proj-code"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <!-- InstaMentalTrend -->
+          <div class="data-card gen-proj-card">
+            <div class="card-glow-layer"></div>
+            <div class="gen-proj-top">
+              <span class="gp-tag">Deep Learning / Forecasting</span>
+              <span class="gp-status">Completed</span>
+            </div>
+            <h4 class="gp-title">InstaMentalTrend</h4>
+            <p class="gp-desc">Sequential LSTM time-series model forecasting temporal trends and engagement frequency patterns in mental health hashtags across social media data.</p>
+            <div class="capsule-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">LSTM</span>
+              <span class="tech-badge">Keras</span>
+              <span class="tech-badge">Pandas</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/Uday-Trivedi/InstaMentalTrend" target="_blank" rel="noopener noreferrer"
+                class="btn-proj-code"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <!-- AmazonAlexaSentimentAnalysis -->
+          <div class="data-card gen-proj-card">
+            <div class="card-glow-layer"></div>
+            <div class="gen-proj-top">
+              <span class="gp-tag">NLP / Classification</span>
+              <span class="gp-status">Completed</span>
+            </div>
+            <h4 class="gp-title">AmazonAlexaSentimentAnalysis</h4>
+            <p class="gp-desc">Supervised natural language processing pipeline performing text preprocessing, feature extraction, and sentiment polarity classification on consumer reviews.</p>
+            <div class="capsule-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">scikit-learn</span>
+              <span class="tech-badge">NLP</span>
+              <span class="tech-badge">Pandas</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/Uday-Trivedi/AmazonAlexaSentimentAnalysis" target="_blank"
+                rel="noopener noreferrer" class="btn-proj-code"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <!-- MNIST-Digit-Recognizer -->
+          <div class="data-card gen-proj-card">
+            <div class="card-glow-layer"></div>
+            <div class="gen-proj-top">
+              <span class="gp-tag">Computer Vision / Deep Learning</span>
+              <span class="gp-status">Completed</span>
+            </div>
+            <h4 class="gp-title">MNIST-Digit-Recognizer</h4>
+            <p class="gp-desc">Convolutional neural network built with PyTorch for handwritten digit classification, evaluating convolutional layers and pooling on the MNIST benchmark.</p>
+            <div class="capsule-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">CNN</span>
+              <span class="tech-badge">Deep Learning</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/Uday-Trivedi/MNIST-Digit-Recognizer" target="_blank" rel="noopener noreferrer"
+                class="btn-proj-code"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <!-- cosmonva_galaxy -->
+          <div class="data-card gen-proj-card">
+            <div class="card-glow-layer"></div>
+            <div class="gen-proj-top">
+              <span class="gp-tag">Computer Vision / Object Detection</span>
+              <span class="gp-status">Completed</span>
+            </div>
+            <h4 class="gp-title">cosmonva_galaxy</h4>
+            <p class="gp-desc">Astronomical image classification and galaxy detection exploration utilizing deep learning convolutional architectures and YOLO feature extraction.</p>
+            <div class="capsule-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">YOLO</span>
+              <span class="tech-badge">CNN</span>
+              <span class="tech-badge">Computer Vision</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/Uday-Trivedi/cosmonva_galaxy" target="_blank" rel="noopener noreferrer"
+                class="btn-proj-code"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <!-- AIML-Projects -->
+          <div class="data-card gen-proj-card">
+            <div class="card-glow-layer"></div>
+            <div class="gen-proj-top">
+              <span class="gp-tag">Machine Learning / Experiments</span>
+              <span class="gp-status">Completed</span>
+            </div>
+            <h4 class="gp-title">AIML-Projects</h4>
+            <p class="gp-desc">Collection of exploratory machine learning implementations covering sonar signal classification, tabular risk modeling, and baseline algorithm comparisons.</p>
+            <div class="capsule-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">scikit-learn</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Data Analysis</span>
+            </div>
+            <div class="project-actions-row">
+              <a href="https://github.com/Uday-Trivedi/AIML-Projects" target="_blank" rel="noopener noreferrer"
+                class="btn-proj-code"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PANEL 7: CONTACT (Index 6)
+         ======================================================== -->
+    <section class="page-panel" id="panel-contact" data-panel="6">
+      <div class="panel-inner contact-container">
+
+        <div class="section-title-wrap">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Contact</span>
+          <h2 class="section-title gradient-header">Let's build something intelligent.</h2>
+          <p class="section-subtitle">I'm open to AI/ML, Generative AI, and software engineering internship and student opportunities, research collaborations, and interesting technical projects.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-split-grid">
+
+          <!-- Left: Contact Details Cards -->
+          <div class="contact-info-col">
+
+            <div class="data-card contact-detail-card">
+              <div class="card-glow-layer"></div>
+              <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-label">Email</span>
+                <a href="mailto:udaytrivedi0012@gmail.com"
+                  class="contact-value link-highlight">udaytrivedi0012@gmail.com</a>
+              </div>
+              <button class="btn-copy-email" onclick="copyEmail('udaytrivedi0012@gmail.com')" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="data-card contact-detail-card">
+              <div class="card-glow-layer"></div>
+              <div class="contact-icon-box"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer"
+                  class="contact-value link-highlight">github.com/Uday-Trivedi</a>
+              </div>
+              <a href="https://github.com/Uday-Trivedi" target="_blank" rel="noopener noreferrer"
+                class="btn-external-link" aria-label="GitHub Profile"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+            <div class="data-card contact-detail-card">
+              <div class="card-glow-layer"></div>
+              <div class="contact-icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/uday-trivedi-2b62a7293" target="_blank" rel="noopener noreferrer"
+                  class="contact-value link-highlight">linkedin.com/in/uday-trivedi-2b62a7293</a>
+              </div>
+              <a href="https://www.linkedin.com/in/uday-trivedi-2b62a7293" target="_blank" rel="noopener noreferrer"
+                class="btn-external-link" aria-label="LinkedIn Profile"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+
+            <div class="data-card status-broadcast-card">
+              <div class="card-glow-layer"></div>
+              <div class="status-indicator-head">
+                <span class="live-beacon"></span>
+                <strong class="beacon-label">Open To Opportunities</strong>
+              </div>
+              <p class="beacon-desc">
+                <strong>AI/ML &bull; Generative AI &bull; Software Engineering Internships</strong><br>
+                Seeking technical internships, research roles, and collaborative projects. Open to remote, hybrid, or on-site opportunities in Chennai and across India.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right: Contact Message Form -->
+          <div class="contact-terminal-col">
+            <div class="data-card terminal-card">
+              <div class="card-glow-layer"></div>
+
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="terminal-title">Direct Inquiries</div>
+              </div>
+
+              <form id="contact-form" class="terminal-form" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Name</label>
+                  <input type="text" id="form-name" required placeholder="Your name" class="terminal-input" />
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email</label>
+                  <input type="email" id="form-email" required placeholder="your.email@example.com"
+                    class="terminal-input" />
+                </div>
+
+                <div class="form-group">
+                  <label for="form-msg" class="form-label">Message</label>
+                  <textarea id="form-msg" rows="4" required
+                    placeholder="Tell me about the role, project, or technical opportunity..."
+                    class="terminal-input terminal-textarea"></textarea>
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn-primary-glow" id="btn-submit-form">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Send Message</span>
+                  </button>
+                  <div class="form-feedback" id="form-feedback"></div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Resume Modal Dialog -->
+  <div class="modal-overlay" id="resume-modal" onclick="closeResumeModal(event)">
+    <div class="modal-box data-card" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-file-pdf modal-icon"></i>
+          <h3>Uday Trivedi &mdash; Resume / Profile Summary</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeResumeModal(event)"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text">
+          4th-year Integrated M.Tech student in Software Engineering at VIT Chennai (CGPA: 8.5/10). Specializing in Machine Learning, Generative AI, NLP, and Agentic AI systems with 3&times; hackathon wins including 1st Place at DataQuest 2.0 and CodeZilla 2025, and SIH 2025 Top 20 college selection.
+        </p>
+        <div class="modal-stats-row">
+          <div class="m-stat"><strong>Domain:</strong> AI/ML &bull; GenAI</div>
+          <div class="m-stat"><strong>Format:</strong> PDF Document</div>
+          <div class="m-stat"><strong>Target:</strong> AI/ML &bull; SDE Internships</div>
+        </div>
+        <div class="modal-actions">
+          <a href="mailto:udaytrivedi0012@gmail.com?subject=Resume%20Request%20-%20Uday%20Trivedi"
+            class="btn-primary-glow">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Request Resume via Email</span>
+          </a>
+          <button class="btn-secondary-glass" onclick="closeResumeModal(event)">
+            <span>Close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master JavaScript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
